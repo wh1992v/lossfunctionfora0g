@@ -3,7 +3,7 @@ source code of different loss function optimizations for alphazero general and c
 
 Generally: 
 The training part code is maily from the open source code from Alphazero General project, details see: https://github.com/suragnair/alpha-zero-general. 
-We considered not to upload this part code, however, in order to do our experiments, we made a lot of changes, which are necessary for our data processing 
+In order to do our experiments, we made a lot of changes, which are necessary for our data processing 
 and elo computation. So we choose to also upload this part code. Importantly, we wrote scripts to deal with the data from training outputs files. Not only 
 the training loss, but also based on arena comparison data, using bayesian elo system (following alphago series papers. see https://github.com/ddugovic/BayesianElo)
 to compute elo ratings. Our scripts show how to transfer arena comparison data into .pgn file which is the input of bayesian elo system. Our scripts also extend for 
