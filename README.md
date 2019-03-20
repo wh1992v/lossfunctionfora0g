@@ -23,7 +23,8 @@ self.loss_pi =  tf.losses.softmax_cross_entropy(self.target_pis, self.pi)
 In our experiments, we change "self.total_loss" in self.train_step = tf.train.AdamOptimizer(self.args.lr).minimize(self.total_loss) to self.loss_v, self.loss_pi, loss_v*loss_pi
 Scripts related to training log files can only be run directly with log files input. 
 Scripts realtes to best models can only be run with bestmodels.
-Unfortunately, these files are too big to upload.
+Unfortunately, training log files are too big to upload.
 
+Only tournament log files can be uploaded, if you want to know how we use tournament results to calculate Bayesian elo, you can see in fold (pitresults), there are scripts for transfering log data to .pgn files. Once you get .pgn data, use command for Bayesian elo system(https://github.com/ddugovic/BayesianElo) to calculate elo ratings and draw boxplots for these elo files(.txt)
 Some further improvements will be updated soon~
 
